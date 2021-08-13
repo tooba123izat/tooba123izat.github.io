@@ -1,0 +1,22 @@
+.imgs{
+width:200px;
+height: auto;
+
+}
+.adiv{
+ display: flex;
+ flex-wrap: wrap;
+ margin-top: 90px;
+ justify-content: space-around;
+
+}
+
+.cdiv{
+    margin-top: 60px;
+    margin-left: 0px;
+    
+}
+.bdiv{
+    box-shadow: 2px 4px 5px grey;
+    width: 250px;  
+}

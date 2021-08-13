@@ -1,4 +1,3 @@
-
 <?php
 session_start();
 
@@ -50,7 +49,7 @@ if (isset($_POST['add'])){
         <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
         <meta name="viewport" content="width-device-width, initial-scale=1">
     
-        <link rel="stylesheet" href="about1.css">
+        <link rel="stylesheet" href="returns.css">
         <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0/dist/css/bootstrap.min.css" rel="stylesheet"
             integrity="sha384-wEmeIV1mKuiNpC+IOBjI7aAzPcEZeedi5yW5f2yOq55WWLwNGmvvx4Um1vskeMj0" crossorigin="anonymous">
         <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0/dist/js/bootstrap.bundle.min.js"
@@ -64,15 +63,31 @@ if (isset($_POST['add'])){
 	  ?>
 	  <div class="main">
       <div class="about1">
-       <h1>ABOUT US</h1>
+       <h2>Terms and conditions</h2>
        <p>
-        BooksStudio established in 2013, is a Pakistani family-owned chain of nationwide bookstores. To our diverse readership, we provide a wide array of 90,000 titles of affordable bargain books, gifts, and educational resource materials. We endeavor to provide a hospitable and nurturing environment to encourage the healthy exchange of ideas by hosting numerous book launches, book bazaars, children story reading sessions, panel presentations, and online discussions.
-        We are committed to engaging with the many diverse readers and organizations of our society on a national scale, to work united towards the goals of a knowledgeable and educated community.
+        <ol>
+            <li>
+                Please do not accept if the parcel is unsealed or damaged.
+            </li>
+            <li>
+                Customers are not allowed to open the parcel before handing over payment unless it is prepaid.
+            </li>
+            <li>
+                In case of any defects or complaints regarding the parcel, please contact customer service within 24 hours.
+            </li>
+            <li>
+                Please note that after 24 hours of delivery no complaint will be entertained.
+
+
+            </li>
+            <li>
+                The product must be unused with the price tag attached.Once our team has reviewed and is satisfied,exchange or refund will be initiated.
+            </li>
+        </ol>
        </p>
       </div>
-
+<div>
   
-  </div>
  <?php
    
 require_once('footer.php');

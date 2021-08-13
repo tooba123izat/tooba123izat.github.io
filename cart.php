@@ -42,7 +42,7 @@ if (isset($_POST['remove'])){
         <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
         <meta name="viewport" content="width-device-width, initial-scale=1">
     
-        <link rel="stylesheet" href="page1.css">
+        <link rel="stylesheet" href="index.css">
         <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0/dist/css/bootstrap.min.css" rel="stylesheet"
             integrity="sha384-wEmeIV1mKuiNpC+IOBjI7aAzPcEZeedi5yW5f2yOq55WWLwNGmvvx4Um1vskeMj0" crossorigin="anonymous">
         <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0/dist/js/bootstrap.bundle.min.js"
@@ -74,11 +74,12 @@ if (isset($_POST['remove'])){
 			  while( $record = mysqli_fetch_assoc($resultset) ){
                             foreach ($product_id as $id){
                                 if ($record['id'] == $id){
+									
                                     cartElement($record['bookimage'], $record['bookname'], $record['price'],$record['authorname'], $record['id']);
-                                   $_SESSION['total']  = $_SESSION['total'] + (int)$record['price'];
-								if(isset($_POST['add'])){	
-								 
-								$_SESSION['total'] = $_SESSION['total'] + (int)$record['price'];}
+                                  
+
+								  $_SESSION['total']  = $_SESSION['total'] + (int)$record['price'];
+								
 							
 								
 							
@@ -146,6 +147,7 @@ if (isset($_POST['remove'])){
     </div>
 	
 	<div>
+	<h3>"LOGIN FIRST THEN CHECKOUT"</h3>
 	<a href="bill.php" type="submit" class="btn  rebtn btn-danger mx-2 mt-5" name="checkout">checkout</a>
 	</div>
 </div>

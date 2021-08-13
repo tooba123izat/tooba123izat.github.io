@@ -1,0 +1,20 @@
+.imgs{
+
+}
+.maindiv{
+ display: flex;
+ flex-wrap: wrap;
+ margin-top: 90px;
+ justify-content: space-around;
+
+}
+
+.div2{
+    margin-top: 60px;
+    margin-left: 0px;
+    
+}
+.div1{
+    box-shadow: 2px 4px 5px grey;
+    width: 250px;  
+}

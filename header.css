@@ -1,0 +1,178 @@
+.navbar{
+    padding-left: 30px !important;
+    
+    
+    
+}
+.nav-item1{
+    padding-left: 30px;
+    color:cornsilk !important ;
+    
+}
+.navbar-brand1{
+    padding-right: 120px;
+    letter-spacing: 9px;
+    color:darkcyan !important;
+    font-size: 30px !important;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    text-transform: uppercase;
+      
+    -webkit-text-stroke:0.3vw darkcyan(255, 255, 255);
+}
+
+
+.navbar-brand1::before{
+
+    content: attr(data-text);
+    position: absolute;
+    top:12px;
+    left:2.5rem; 
+    width:0;
+    height: 100%;
+    color: white;
+    text-shadow: 1px 1px 5px black; 
+    -webkit-text-stroke:0vw rgb(252, 253, 253);
+    border-right: 2px solid white;
+    overflow: hidden;
+    animation:animate 6s linear infinite;
+}
+
+
+@keyframes animate
+{
+    0%,10%,100%
+    {
+        width: 0;
+    }
+   90%,70%{
+
+       width:25%;
+   }
+
+}
+
+
+
+
+
+.navbar-light{
+    background-color: darkcyan;
+}
+.nav-link1{
+    color: cornsilk !important;
+}
+.nav-link:hover{
+    color: black !important;
+}
+.div1{
+    color: aliceblue;
+    background-color: black;
+    width:100%;
+    
+    margin:0px 0px 0px 0px;
+    padding:0px 0px 0px 8px;
+    padding-bottom: 0%;
+    text-align: center;
+  
+      display: flex;
+      flex-wrap: wrap;
+  }
+  .nav-link2{
+      color: darkcyan !important;
+  }
+  .div5{
+      display: flex;
+      justify-content: space-around;
+      
+      flex-wrap: wrap;
+
+  }
+  .div5 div p{
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    text-transform: capitalize;
+    text-shadow: 1px 1px 2px black; 
+    color: cadetblue;
+    margin-top: 10px;
+    
+      
+      
+  }
+  .div5 div{
+      display: flex;
+  }
+  .div5 div i{
+      margin-top: 10px;
+      font-size: 25px;
+      padding-left: 10px;
+
+  }
+ 
+  
+  
+    @media screen and (max-width: 992px) {
+    .div6 {
+      height: 570px;
+    }
+    @keyframes animate
+{
+    0%,10%,100%
+    {
+        width: 0;
+    }
+   90%,70%{
+
+       width:70%;
+   }
+
+}
+
+
+  }
+   
+  @media screen and (max-width: 992px) {
+    html{
+      font-size: 70%;
+    }
+  }
+   
+
+
+  
+
+  @media screen and (max-width: 992px) {
+    .headdiv {
+      display: flex;
+      flex-direction: column;
+    }
+  }
+   
+
+
+
+#cart_count{
+    text-align: center;
+    padding: 0 0.9rem 0.1rem 0.9rem;
+    border-radius: 3rem;
+}
+.cart-items + .cart-items{
+    padding: 2% 0;
+}
+
+.price-details h6{
+    padding: 3% 2%;
+}
+.rebtn{
+margin-top:10px;}
+
+
+.carddiv{
+
+    margin-bottom: 50px;
+}
+
+
+
+.form-control{
+    width: 300px !important;
+
+}

@@ -1,0 +1,80 @@
+body{
+    background-image: url(pic14.jpg);
+    background-repeat: no-repeat;
+    
+    
+    background-size: 100%;
+}
+.formdiv{
+
+    border-radius: 6px;
+    
+    display: inline-block;
+    background-color: rgba(240, 218, 172, 0.753);
+
+}
+.main{
+    text-align: center;
+    padding-top: 4rem;
+    
+}
+.labels{
+    margin-top: 0.7rem; 
+    margin-right: 22rem;
+    font-family:Georgia, 'Times New Roman', Times, serif;
+    color: black;
+}
+.inputname{
+    display: flex;
+    margin-left: 2rem;
+    width:30rem;
+    height: 2.7rem;
+    border-radius: 1rem;
+    border:none;
+    margin-top: 0.7rem;
+    
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    margin-right: 0.6rem;
+}
+
+h1{
+
+    color: rgb(148, 125, 75);
+}
+.rbtn{
+
+    float: right;
+    border:0;
+    background:darkcyan;
+    color: black ;
+    padding: 1rem 4rem;
+    border-radius: 1rem;
+    margin: 1.6rem 1.6rem 1.6rem 1.6rem;   
+}
+
+.inputname:focus{
+
+    box-shadow: 0 0 10px 4px #fdcb6e;
+    outline: none;
+}
+
+
+@media screen and (max-width: 700px) {
+    .inputname{
+        width: 15rem;
+    }
+
+}
+
+@media screen and (max-width: 400px) {
+    .inputname{
+        width: 10rem;
+    }
+
+}
+
+ @media screen and (max-width: 720px) {
+    html{
+      font-size: 80%;
+    }
+  }

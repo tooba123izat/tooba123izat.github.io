@@ -3,10 +3,10 @@
 
 function component($bookname,$authorname,$price,$bookimage,$productid){
 	$element="
-	<div class=\"col-md-3 col-sm-6 my-3 my-md-0\">
+	<div class=\" col-md-3 col-sm-6 my-3 my-md-0 py-5\">
 	  <form action=\"index.php\" method=\"post\" >
-	    <div class=\"card\">
-                <a href=\"details.php?pid=$productid\"><img src=\"$bookimage \" class=\"card-img-top  imgs\" /></a>
+	    <div class=\"card carddiv\">
+                <a href=\"details1.php?pid=$productid\"><img src=\"$bookimage \" class=\"card-img-top  imgs\" /></a>
                 <div class=\"card-body\">
                     <h5 class=\"card-title\">$bookname</h5>
                     <p class=\"card-text\">$price Rs<br /> By:$authorname </p>
@@ -49,14 +49,16 @@ function cartElement($bookimage, $bookname, $price,$authorname, $id){
                                 <h5 class=\"pt-2 mt-4\">$price Rs</h5>
 								 <h5 class=\"pt-2 mt-4\">$authorname Rs</h5>
                                
-                                <button type=\"submit\" class=\"btn  rebtn btn-danger mx-2 mt-5\" name=\"remove\">Remove</button>
+                                <button type=\"submit\" class=\"btn  rebtn btn-danger mx-2 mt-3\" name=\"remove\">Remove</button>
 								
                             </div>
                             <div class=\"col-md-3 py-5\">
                                 <div>
-                                    <button type=\"submit\"name=\"minus\"  class=\"btn bg-light border rounded-circle\"><i class=\"fa fa-minus\"></i></button>
-                                    <input type=\"text\" value=\"1\" class=\"form-control w-25 d-inline\">
-                                    <button type=\"submit\" name=\"add\" class=\"btn bg-light border rounded-circle\"><i class=\"fa fa-plus\"></i></button>
+                                   
+                                  <button type=\"submit\"name=\"minus\"  class=\"btn bg-light border rounded-circle\"><i class=\"fa fa-minus\"></i></button>
+                                    <input type=\"number\" value=\"1\" class=\"form-control w-25 d-inline\" min=\"1\" max=\"5\">
+                                     <button type=\"submit\" name=\"plus\" class=\"btn bg-light border rounded-circle\"><i class=\"fa fa-plus\"></i></button>  
+                       
 									
 									
                                 </div>
@@ -75,11 +77,11 @@ function productelement($bookname, $authorname, $price, $bookimage,$productid,$d
     $element = "
     
     <form  method=\"post\"class=\"cart-items\">
-        <div class=\"maindiv\">
-        <div class=\" div1 \">
+        <div class=\"adiv\">
+        <div class=\" bdiv \">
             <img src=\"$bookimage \" width=\"100%\" class=\"imgs\" />
         </div>
-        <div class=\" div2 col-md-2\">
+        <div class=\" cdiv col-md-2\">
             
             <h5>$bookname</h5>
             <p>$price Rs<br /> By: $authorname </p>

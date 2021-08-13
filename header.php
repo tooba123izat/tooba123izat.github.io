@@ -1,7 +1,3 @@
-
-
-
-
 <!DOCTYPE html>
 <html>
 
@@ -10,7 +6,7 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
     <meta name="viewport" content="width-device-width, initial-scale=1">
 
-    <link rel="stylesheet" href="page1.css">
+    <link rel="stylesheet" href="header.css">
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0/dist/css/bootstrap.min.css" rel="stylesheet"
         integrity="sha384-wEmeIV1mKuiNpC+IOBjI7aAzPcEZeedi5yW5f2yOq55WWLwNGmvvx4Um1vskeMj0" crossorigin="anonymous">
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0/dist/js/bootstrap.bundle.min.js"
@@ -34,7 +30,7 @@
 <div>
         <nav class="navbar navbar-expand-lg navbar-light ">
             <div class="container-fluid">
-                <a class="navbar-brand navbar-brand1" href="#">booksStudio</a>
+                <a class="navbar-brand navbar-brand1" data-text="booksStudio" href="#">booksStudio</a>
                 <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
                     data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent"
                     aria-expanded="false" aria-label="Toggle navigation">
@@ -51,29 +47,32 @@
                             </a>
                         </li>
                         <li class="nav-item nav-item1">
-                            <a class="nav-link nav-link1" href="login.php">sign in</a>
+                            <a class="nav-link nav-link1" href="login1.php">sign in</a>
                         </li>
                         <li class="nav-item nav-item1">
-                            <a class="nav-link nav-link1" href="signup1.php">sign up</a>
+                            <a class="nav-link nav-link1" href="logout.php">Logout</a>
                         </li>
                         <li class="nav-item nav-item1">
                             <a class="nav-link nav-link1" href="cart.php"> <i class="fa fa-shopping-cart"></i> Cart
-                                 <?php
+                                 
+                                <?php
 
-                        if (isset($_SESSION['cart'])){
-                            $count = count($_SESSION['cart']);
-                            echo "<span id=\"cart_count\" >$count</span>";
-                        }else{
-                            echo "<span id=\"cart_count\" >0</span>";
-                        }
-
-                        ?></a>
+                                if (isset($_SESSION['cart'])){
+                                    $count = count($_SESSION['cart']);
+                                    echo "<span id=\"cart_count\" >$count</span>";
+                                }else{
+                                    echo "<span id=\"cart_count\" >0</span>";
+                                }
+        
+                                ?>   
+                            
+                            </a>
                         </li>
 
                     </ul>
                     <form action="search.php" method="post" class="d-flex">
-                        <input class="form-control me-2" type="text" placeholder="Search" name="query1" aria-label="Search">
-                        <input class="btn btn-outline-success" type="submit" name="submit"> <i class="fa fa-search"></i></button>
+                        <input class="form-control me-2 mysearch" type="text" placeholder="Search by book name or author" name="query1" aria-label="Search">
+    <button class="btn btn-outline-light"  value="" type="submit" name="submit"> <i class="fa fa-search"></i></button>
                     </form>
                 </div>
             </div>
@@ -83,3 +82,4 @@
 	
 	</body>
 	</html>
+

@@ -1,4 +1,3 @@
-
 <?php
 session_start();
 
@@ -43,6 +42,8 @@ if (isset($_POST['add'])){
 
 
 
+
+
 <!DOCTYPE html>
 <html>
     <head>
@@ -50,7 +51,7 @@ if (isset($_POST['add'])){
         <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
         <meta name="viewport" content="width-device-width, initial-scale=1">
     
-        <link rel="stylesheet" href="about1.css">
+        <link rel="stylesheet" href="shipping.css">
         <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0/dist/css/bootstrap.min.css" rel="stylesheet"
             integrity="sha384-wEmeIV1mKuiNpC+IOBjI7aAzPcEZeedi5yW5f2yOq55WWLwNGmvvx4Um1vskeMj0" crossorigin="anonymous">
         <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0/dist/js/bootstrap.bundle.min.js"
@@ -63,21 +64,35 @@ if (isset($_POST['add'])){
 	  require_once ('header.php');
 	  ?>
 	  <div class="main">
-      <div class="about1">
-       <h1>ABOUT US</h1>
+      <div class="about1 ">
+       <h3>Shipping and Handling</h3>
        <p>
-        BooksStudio established in 2013, is a Pakistani family-owned chain of nationwide bookstores. To our diverse readership, we provide a wide array of 90,000 titles of affordable bargain books, gifts, and educational resource materials. We endeavor to provide a hospitable and nurturing environment to encourage the healthy exchange of ideas by hosting numerous book launches, book bazaars, children story reading sessions, panel presentations, and online discussions.
-        We are committed to engaging with the many diverse readers and organizations of our society on a national scale, to work united towards the goals of a knowledgeable and educated community.
+        Our aim is to deliver the parcel to our valued customer at our earliest. You are requested to be available on the provided contact number so our team can reach you for order verification. Orders will be processed after verification from the customer. For Cash on Delivery (COD) please pay the rider before opening the package.Sometimes there may be problems delivering to the address which you have provided. If this happens, kindly contact us at 0123-34567899 or email us at booksstudio@gmail.com.
+       </p>
+       <h3>Local orders</h3>
+       <p>
+        Standard Delivery Timelines:
+        <ul>
+            <li>
+                Our Standard Delivery Timeline For Karachi Is 2 To 3 Business Days.
+            </li>
+            <li>
+                Our Standard Delivery Timeline For Rest Of Pakistan Is 3 To 4 Business Days.
+            </li>
+        </ul>
+       </p>
+       <h3>Delivery charges</h3>
+       <p>
+        Free shipping Nationwide on all orders above PKR 1999. Charges of below PKR 1999 orders are calculated based on the destination and the weight of your shipment.
        </p>
       </div>
-
-  
-  </div>
- <?php
+</div>
+   <?php
    
 require_once('footer.php');
    
    ?>
+
 
     </body>
 </html>

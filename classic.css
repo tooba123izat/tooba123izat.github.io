@@ -1,0 +1,72 @@
+.mydiv{
+
+    width: 100%;
+    height: 6rem;
+    color: rgba(4, 58, 58, 0.993);
+    box-shadow: 0 0 10px 4px #24221e ;
+    text-align: center !important;
+    padding-top: 1.6rem !important;
+    font-weight:700;
+    background-image: url(pic90.jpeg);
+    background-repeat: no-repeat;
+    background-size:100%;
+
+}
+
+.card{
+      height: 200px;
+      width: 200px;
+      margin-top: 10px;
+margin-bottom: 60px;
+      
+  }
+  .cards{
+      width: 230px;
+      height: 365px;
+      box-shadow: 2px 4px 5px grey;
+     margin-left: 35px;
+      margin-top: 30px;
+      border-radius: 5px;
+
+
+  }
+  .imgs{
+      height: 200px;
+      width:100% !important;
+
+       }
+
+   .maincard{
+     
+      display: flex;
+      flex-wrap: wrap;
+
+   }
+   .btn1{
+       background-color:darkcyan !important;
+       border-color: grey !important;
+       width: 195px;
+       padding-left: 0px !important;
+
+   }
+   .div6{
+       width: 100%;
+       height: 350px;
+     margin-top: 50px;
+     flex-wrap: wrap;
+     display: block;
+     /* border:5px solid goldenrod; */
+       
+   }
+    @media screen and (max-width: 992px) {
+    .div6 {
+      height: 570px;
+    }
+  }
+   
+  @media screen and (max-width: 992px) {
+    html{
+      font-size: 70%;
+    }
+  }
+   

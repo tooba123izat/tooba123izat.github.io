@@ -4,6 +4,17 @@ session_start();
 
 include("db.php");
 	
+if (isset($_SESSION['loggedin']) && $_SESSION['loggedin'] == true){	
+$query="select * from registered where username = '{$_SESSION['username']}' limit 1";
+              $resultset = mysqli_query($conn, $query) or die("database error:". mysqli_error($conn));			
+			  while( $record = mysqli_fetch_assoc($resultset) ) {
+			
+			  
+			 $name=$record['username'];
+			}
+}
+			
+				
 	
 ?>
 
@@ -44,22 +55,34 @@ include("db.php");
 
         <div class="main">  
         <div class="formdiv">
-            
-          <h1>APKA APNA BILL</h1>     
+		
+          <h1>APKA APNA BILL</h1>
+		  
+		  
           
           <div> <h2>DELIVERY INFORMATION</h2> 
         <div> 
-            <p>NAME: <?php echo	$_SESSION['username']; ?></p>
-            <p>E-MAIL:<?php echo $_SESSION['email']; ?></p>
-            <p>MOBILE NUMBER:<?php echo $_SESSION['mnum']; ?> </p>
-            <p>ADDRESS:<?php echo $_SESSION['address']; ?></p>
+            <p>NAME:<?php if (isset($_SESSION['loggedin']) && $_SESSION['loggedin'] == true){
+			echo $name;} ?> </p>
+							   
+							   
+							   
+            <p>E-MAIL:<?php if (isset($_SESSION['loggedin']) && $_SESSION['loggedin'] == true){
+			echo $_SESSION['email'] ;} ?></p>
+            <p>MOBILE NUMBER:<?php 
+			
+			if (isset($_SESSION['loggedin']) && $_SESSION['loggedin'] == true){
+			echo $_SESSION['mnum'];} ?> </p>
+            <p>ADDRESS:<?php if (isset($_SESSION['loggedin']) && $_SESSION['loggedin'] == true){
+			echo $_SESSION['address'];} ?></p>
         </div>
         <hr />
         <div> 
-            <p>TOTAL PRODUCTS:<?php echo $_SESSION['count']; ?> </p>
-            <p>TOTAL PRICE:<?php echo $_SESSION['total']; ?></p>
+            <p>TOTAL PRODUCTS:<?php if (isset($_SESSION['loggedin']) && $_SESSION['loggedin'] == true){
+			echo $_SESSION['count'];} ?> </p>
+            <p>TOTAL PRICE:<?php if (isset($_SESSION['loggedin']) && $_SESSION['loggedin'] == true){echo $_SESSION['total']; }?></p>
             <p>DELIVERY CHARGES:200 </p>
-            <p>TOTAL BILL:<?php echo $_SESSION['total'] + 200; ?></p>
+            <p>TOTAL BILL:<?php if (isset($_SESSION['loggedin']) && $_SESSION['loggedin'] == true){echo $_SESSION['total'] + 200;} ?></p>
             <p>PAYMENT: PAYMENT ON DELIVERY OF ORDER</p>
         </div>
         <h3>ORDER WILL BE DILIVERED IN 5-6 WORKING DAYS</h3>
